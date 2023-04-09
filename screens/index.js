@@ -1,20 +1,19 @@
-import mods from "./*/index.js";
 
-export const screens = mods.map(mod => {
-  return Object.assign(mod, {
-    value: {
-      navigator: mod.value,
-      title: mod.name
-    }
-  })
-});
+import React from "react";
+import { View, StyleSheet } from "react-native";
 
-export function getNavigationScreen(name) {
-  const screen = screens.find(screen => screen.name == name);
+const  = () => {
+  return <View style={_styles.}>
+      </View>;
+};
 
-  if (screen) {
-    return screen.name
+export default ;
+
+const _styles = StyleSheet.create({
+  : {
+    backgroundColor: "#f0f0f1",
+    padding: 10,
+    position: "relative",
+    height: "100%"
   }
-
-  return name
-}
+});
